@@ -8,12 +8,14 @@ public class Main {
         float weight = Float.parseFloat(scanner.next());
         System.out.print("What's your height? (in meters) ");
         float height = Float.parseFloat(scanner.next());
-        float bmi = (float) (weight / (height * height));
+        Double bmi = (Double) (weight / (height * height));
 
         Data data = new Data();
         data.setWeight(weight);
         data.setHeight(height);
         data.setBmi(bmi);
+        
+        bmi.floatValue();
 
         System.out.println(" ");
         System.out.println("Your results:");
