@@ -3,7 +3,7 @@ package Data;
 public class Data {
     private Float weight;
     private Float height;
-    private Float bmi;
+    private Double bmi;
 
 
     public Float getWeight() {
@@ -22,11 +22,11 @@ public class Data {
         this.height = height;
     }
 
-    public Float getBmi() {
+    public Double getBmi() {
         return bmi;
     }
 
-    public void setBmi(Float bmi) {
+    public void setBmi(Double bmi) {
         this.bmi = bmi;
     }
 }
